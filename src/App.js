@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar';
+import Breadcrumbs123 from './breadcrumbs';
 
 function App() {
   return (
@@ -13,14 +15,12 @@ function App() {
           2.5- on mobile screen size.
         </p>
         <p>----------------------------</p>
-        <div className='NavbarDiv'>
-          <ul className='NavbarUL'>
-            <li><a href="locasthost:3000">Home</a></li>
-            <li>About</li>
-            <li>News</li>
-            <li>Contact</li>
-          </ul>
+        <div><Navbar /></div>
+        <div style={{ fontSize: '10px' }}>
+          Below are Harcoded Breadcrumbs
         </div>
+        <div><Breadcrumbs123 /></div>
+
       </header>
     </div>
   );

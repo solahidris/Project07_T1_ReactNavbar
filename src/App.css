@@ -40,21 +40,63 @@
 
 .App-Description {
   font-size: 11px;
-  max-width: 60%;
+  max-width: 100%;
+  text-align: left;
 }
 
 .NavbarDiv {
-  background: rgb(162, 197, 93);
+  background: rgb(162, 197, 93, 0.2);
   width: 100%;
-  max-width: 90%;
+  padding: 0px 20px;
+  margin: 0 auto 20px auto;
+  border: solid;
+  border-radius: 10px;
 }
 
 .NavbarUL {
-  background: rgb(81, 109, 27);
+  background: rgba(124, 146, 124, 0.5);
   width: 100%;
+  max-width: 120%;
   list-style: none;
-  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 0px;
+}
+
+.NavbarUL li a {
+  color: white;
+  text-decoration: none; 
+}
+
+.NavbarUL li a:hover {
+  color: #5eaaed;
+  text-decoration: underline;
+}
+
+.BreadcrumbsUL {
+  background: rgb(162, 197, 93, 0.2);
+  list-style: none;
+  text-align: center;
+  padding-inline-start: 0;
+}
+
+.Breadcrumbs li {
+  background: rgba(124, 146, 124, 0.5);
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.Breadcrumbs li a {
+  color: white;
+  text-decoration: none; 
+}
+
+.BreadcrumbsUL li+li::before {
+  content: " /\00a0"
+}
+
+.Breadcrumbs li a:hover {
+  color: #5eaaed;
+  text-decoration: underline;
 }

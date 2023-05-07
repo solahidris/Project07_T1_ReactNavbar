@@ -11,7 +11,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <button id="nav-toggle" onClick={handleNavToggle}>Toggle Navbar</button>
+            <button id="nav-toggle" onClick={handleNavToggle}>Navigation Menu</button>
             <div className={`NavbarDiv ${isNavbarVisible ? 'active' : ''}`}>
                 <ul className='NavbarUL'>
                 <li><NavLink to='/'>Home</NavLink></li>

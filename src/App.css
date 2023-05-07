@@ -42,6 +42,7 @@
   font-size: 11px;
   max-width: 100%;
   text-align: left;
+  padding: 0 10vw 0 10vw;
 }
 
 @media screen and (max-width: 768px) {

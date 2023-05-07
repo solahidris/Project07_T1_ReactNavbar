@@ -44,7 +44,7 @@
   text-align: left;
 }
 
-.NavbarDiv {
+.NavbarLinkDiv {
   background: rgb(108, 194, 185);
   max-width: 100%;
   /* width: 100%; */
@@ -80,30 +80,16 @@
   text-decoration: underline;
 }
 
-.BreadcrumbsUL {
-  background: rgb(162, 197, 93, 0.2);
+.Breadcrumbs {
+  /* background: rgb(162, 197, 93, 0.2); */
   list-style: none;
   text-align: center;
   padding-inline-start: 0;
-}
-
-.Breadcrumbs li {
-  background: rgba(124, 146, 124, 0.5);
-  display: inline-block;
-  padding: 5px;
   font-size: 15px;
+  padding: 20px;
 }
 
-.Breadcrumbs li a {
+.Breadcrumbs a {
   color: white;
-  text-decoration: none; 
-}
-
-.BreadcrumbsUL li+li::before {
-  content: " /\00a0"
-}
-
-.Breadcrumbs li a:hover {
-  color: #5eaaed;
-  text-decoration: underline;
+  text-decoration: none;
 }

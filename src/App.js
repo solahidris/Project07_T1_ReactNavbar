@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './navbar';
-import Breadcrumbs123 from './breadcrumbs';
 import Home from './Pages/Home.js';
 import About from './Pages/About';
 import News from './Pages/News';
 import Contact from './Pages/Contact';
 import Description from './appDescription.js';
+import Breadcrumbs123 from './breadcrumbs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,10 +18,9 @@ function App() {
         <Description />
         <p>----------------------------</p>
         <div><Navbar /></div>
-
         <div><Breadcrumbs123 /></div>
         <div style={{ fontSize: '10px' }}>
-          Above are Harcoded Breadcrumbs
+          (Breadcrumbs)
         </div>
         <p>----------------------------</p>
 

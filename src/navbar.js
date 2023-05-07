@@ -1,10 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink } from 'react-router-dom';
+import './App.css';
 
 const Navbar = () => {
+
+    const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+    const handleNavToggle = () => {
+        setIsNavbarVisible(!isNavbarVisible);
+    }
     return (
-        <>
-            <div className='NavbarLinkDiv'>
+        <div>
+            <button id="nav-toggle" onClick={handleNavToggle}>Toggle Navbar</button>
+            <div className={`NavbarDiv ${isNavbarVisible ? 'active' : ''}`}>
                 <ul className='NavbarUL'>
                 <li><NavLink to='/'>Home</NavLink></li>
                 <li><NavLink to='/about'>About</NavLink></li>
@@ -12,7 +20,7 @@ const Navbar = () => {
                 <li><NavLink to='/contact'>Contact</NavLink></li>
                 </ul>
             </div>
-        </>
+        </div>
     );
 };
 

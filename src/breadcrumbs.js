@@ -9,7 +9,7 @@ const Breadcrumbs123 = () => {
         <div className='Breadcrumbs'>
           <Link to="/">Home</Link>
           { pathnames.map((name,index) => {
-              const goTo = '/${pathnames.slice(0,index+1).join("/")}';
+              const goTo = `/${pathnames.slice(0, index + 1).join('/')}`;
               const isItLast = index === pathnames.length - 1;
               
               return isItLast ? (
